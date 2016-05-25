@@ -22,7 +22,10 @@ RUN echo "upstream php-upstream { server ${PHP_FPM_HOST}:9000; }" > /etc/nginx/c
 
 RUN usermod -u 1000 www-data
 
-CMD ["nginx"]
+ADD start.sh /start.sh
+RUN chmod +x /start.sh
+
+CMD ["/bin/bash", "/start.sh"]
 
 EXPOSE 80
 EXPOSE 443
