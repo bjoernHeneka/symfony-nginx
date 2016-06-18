@@ -28,4 +28,4 @@ RUN ln -s /etc/nginx/sites-available/symfony.conf /etc/nginx/sites-enabled/symfo
 
 
 
-ENTRYPOINT ["/bin/bash" "/files/start.sh"]
+ENTRYPOINT ["/bin/bash", "/files/start.sh"]
