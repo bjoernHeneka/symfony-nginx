@@ -12,6 +12,7 @@ RUN apt-get update && \
     apt-get install -y \
     nginx \
     vim \
+    apache2-utils \
     php5-ldap && \
     apt-get clean && \
     rm -fr /var/lib/apt/lists/*
