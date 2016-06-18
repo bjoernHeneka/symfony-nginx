@@ -11,8 +11,8 @@ EXPOSE 443
 RUN apt-get update && \
     apt-get install -y \
     nginx \
+    gettext \
     vim \
-    apache2-utils \
     php5-ldap && \
     apt-get clean && \
     rm -fr /var/lib/apt/lists/*
