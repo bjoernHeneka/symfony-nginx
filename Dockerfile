@@ -27,6 +27,6 @@ RUN ln -s /etc/nginx/sites-available/symfony.conf /etc/nginx/sites-enabled/symfo
     && usermod -u 1000 www-data \
     && chmod +x /files/start.sh
 
-
+WORKDIR /var/www/symfony
 
 ENTRYPOINT ["/bin/bash", "/files/start.sh"]
